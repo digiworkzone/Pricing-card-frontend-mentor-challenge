@@ -24,25 +24,23 @@ html {
     padding: 25px;
   }
   #bottom-section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 55%;
     color: #fff;
   }
   #bottom-left {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
     height: 100%;
     background-color: #28b8b4;
-    padding: 20px;
+    padding: 25px;
+    flex-basis: 50%;
   }
   #bottom-right {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
     height: 100%;
     background-color: #2ebfbd;
-    padding: 20px;
+    padding: 25px;
+    flex-basis: 50%;
   }
   #top-section h2{
     color: #2ab2af;
@@ -72,18 +70,16 @@ html {
     transition: .1s;
   }
   #price-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
   }
   #price {
     font-weight: 700;
     font-size: 1.4rem; 
   }
-  #price-frequency, #price {
-    display: inline-block;
-  }
+
   #price-frequency {
-    position: relative;
-    top: -3px;
     font-size: .8rem;
     opacity: .6;
     margin-left: 5px;
@@ -113,8 +109,8 @@ html {
       width: 550px;
       height: 400px;
     }
-    #bottom-right, #bottom-left {
-      width: 50%;
-    }
+    #bottom-section{
+      flex-direction: row;
+
   }
   
